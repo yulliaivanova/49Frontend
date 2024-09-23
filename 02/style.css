@@ -1,0 +1,29 @@
+h1{
+    /* изменили цвет;*/
+    color: darkslateblue;
+    /* выравняли текстовый элемент по центру*/
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+.blue-text{
+    color: rgb(86, 90,120);
+}
+.css-heading{
+    color: darkmagenta;
+    font-weight: bold;
+    font-size: 18px;
+}
+.img-no-inline{
+    width: 200px;
+}
+.css-list-item{
+    font-style: italic;
+    color: aquamarine;
+}
+/* класс модификатор, изменяющий стили основного класса при конфликте стилей должен быть написан ниже в CSS  файле, если его стили приоритетнее */
+.css-priority{
+    text-decoration: underline;
+}

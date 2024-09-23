@@ -1,0 +1,102 @@
+/* padding приращивается к элементу, чтобы этого избежать
+необходимо указть в самом начале свойство, которое убирает
+поведение padding по умолчанию:внутренние отступы не будут 
+физически изменять размер элементов  */
+* {
+  box-sizing: border-box;
+}
+body {
+  /* avto работает только с margin */
+  margin: 0;
+  /* padding-left: 30px; */
+  /* padding-right: 30px; */
+}
+
+header {
+  height: 100px;
+  width: 100;
+  padding: 10px 20px;
+  background-color: rgb(235, 178, 71);
+}
+main {
+  padding: 0 30px;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.theme-title {
+  /* значение верхнего внешнего отступа */
+  margin-top: 0px;
+}
+
+.big-box {
+  padding: 60px;
+  background-color: rgb(127, 127, 233);
+  width: 300px;
+  height: 300px;
+  /* чтобы закруглить края используем border-radius, можна рх или %  */
+  border-radius: 15px;
+}
+.small-circle {
+  /* чтобы быстро написать width: 100px- нажимаем w100 */
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  background-color: #d7e235;
+  /* при закруглении на 50%  превратим квадрат в круг */
+  border-radius: 50%;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+/* класс модификатор */
+.red-box {
+  margin: 20px;
+  padding: 10px;
+  /* толщина, стиль, цвет */
+  border: 1px solid black;
+  background-color: rgb(212, 129, 129);
+}
+
+.green-box > p{
+/* если мы указываемв классе .green-box тег span, то
+будет 2 варианта:
+1. .green-box > span  тогда эта настройка будет касаться конкретно этого span 
+.green-box span - будет касаться всех span 
+  /*  */
+
+  font-size: large;
+
+}
+
+.green-box  {
+    /* по часовой стрелке, через пробел
+    1 значение_для всех сторон
+    2 значения- будет означать сверху-снизу и слева-справа
+    3 значения 
+    если во втором значении указываем авто(должно быть посередине, то контейнер расположится по центру
+     */
+     padding-left: 25px;
+  margin: 10px 30px 5px;
+  border: 6px dotted rgb(248, 165, 248);
+  background-color: rgb(122, 186, 122);
+}
+
+.yellow-box {
+  border: 10px dashed rgb(122, 196, 221);
+  padding: 50px;
+  /* чтобы быстро набрать background-color: пишем bc  */
+  background-color: #e5ee67;
+}
+
+footer {
+  height: 80px;
+  padding: 10px 20px;
+  background-color: rgb(32, 111, 180);
+  width: 100%;
+}
