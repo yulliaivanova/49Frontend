@@ -1,0 +1,7 @@
+p{
+    background-color: rgb(237, 201, 146);
+    border: 3px solid red;
+}
+p >span{
+    border: 3px solid blue;
+}
