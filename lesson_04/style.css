@@ -1,0 +1,26 @@
+.container{
+    /* включили свойство для родителя */
+    display: flex;
+    /* свойство выравнивание по главной основной оси, главная ось по умолчанию
+    идет по горизонтали(center), start(в начале), end(вконце), space-between(пространство
+    распределяется равномерно) */
+    justify-content: center;
+    /* свойство выранивания для поперечной оси */
+    align-items: center;
+/* свойство для выбора положения главной оси */
+    flex-direction: column;
+    /* промежуток между элементами */
+    gap: 10px;
+    width: 100%;
+    min-height: 250px;
+    background-color: rgb(147, 187, 228);
+}
+
+.container >div{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(177, 196, 214);
+   
+
+}

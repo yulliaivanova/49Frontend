@@ -1,0 +1,19 @@
+header{
+    padding: 16px;
+ display: flex ;
+ /* justify-content: space-between; */
+ align-items: center;
+ column-gap: 20px;
+}
+
+.header__img-logo{
+    width: 300 px;
+    min-height: 10px;
+    background-color: aqua;
+}
+
+.header__img-banner{
+    width: 1500px;
+    height: 200px;
+    /* background-image: linear-gradient; */
+}
