@@ -1,0 +1,28 @@
+* {
+  /* box-sizing: border-box; */
+  background-color: rgb(202, 151, 83);
+}
+
+h1{
+    text-align: center;
+}
+.collection {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: 300px;
+}
+
+.collection__description {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+  width: 300px;
+  text-align: center;
+  color: black;
+}
+.collection__poster {
+  width: 100%;
+  height: 200px;
+}

@@ -1,34 +1,97 @@
 .container-grid {
-    /* задали свойство grid контейнеру-родителя */
+  /* задали свойство grid контейнеру-родителя */
   display: grid;
   /*  промежуток между контейнерами */
   gap: 5px;
   /*   grid-template-columns шаблон как будут распологаться колонки
     значения можна записать в px или адаптивных зачениях */
-/* обьявили правило для ширины колонок */
-/* 1fr это один кусочек в схеме, все fr равны между собой
+  /* обьявили правило для ширины колонок */
+  /* 1fr это один кусочек в схеме, все fr равны между собой
 и при сложении дают всю ширину родителя, в нашем примере 1fr это четверть
 каждый 1fr написанный через пробел_это новая колонка
 fr это адаптивная величина */
-/* сколько значений = столько колонок */
-/* если хотим эту запись короче указать, то записываем repeat */
-/* grid-template-columns:repeat(4 1fr), означает 4 раза по одному fr */
+  /* сколько значений = столько колонок */
+  /* если хотим эту запись короче указать, то записываем repeat */
+  /* grid-template-columns:repeat(4 1fr), означает 4 раза по одному fr */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* если хотим указать значение колонок в пикселях */
   /* grid-template-columns: 200px 100px 300px;  */
   /* когда указываем 1 значение-это высота строки, то оно только для 1 строки */
-  grid-template-rows:60px;
+  grid-template-rows: 60px;
   /* если хотим чтобы это значение сохранялось для всех строк,
   то указываем auto */
-  grid-template-rows: auto;
+  /* grid-template-rows: auto; */
 }
 
-.grid-item{
-    padding: 10px;
-    background-color: rgb(189, 189, 246);
+.grid-item {
+  padding: 10px;
+  background-color: rgb(189, 189, 246);
 }
 
-.container-grid-min-max{
-    display: grid;
+.container-grid-min-max {
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(3, 1fr);
+  /* как сделать так чтобы при изменении ширины менялось количество колонок
+    мы долдны менять свойство в grid-template-columns repeat(autp-fill, minmax(100px, 1fr) */
+  /* ниже-это высота ячейки */
+  grid-template-rows: 70px;
+}
+.grid-item-adaptive {
+  background-color: rgb(206, 206, 63);
+}
+.container-grid-areas {
+  width: 100%;
+  height: 200px;
+  display: grid;
+  /* areas-это зоны, прописываем схему группировок ячеек в виде строк,
+  которые будут идти друг за другом */
+  grid-template-areas:
+    "header header header"
+    "content content sun "
+    "content content planet"
+    "footer footer footer"
+    ;
+  grid-auto-rows: repeat(4, 1fr);
+}
+.top {
+  /* верхняя зона */
+  grid-area: header;
+  background-color: rgb(131, 131, 223);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  grid-area: content;
+  background-color: rgb(155, 201, 201);
+
+}
+
+.sun{
+  grid-area: sun;
+  background-color: rgb(220, 196, 196);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.planet{
+  grid-area: planet;
+  background-color: rgb(180, 174, 174);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.bottom{
+  grid-area: footer;
+  background-color: rgb(31, 117, 31);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
 
 }
