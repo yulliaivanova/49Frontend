@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lesson 06. Grid layot</title>
+  </head>
+  <body>
+    <h1>Grid layot</h1>
+    <p>
+      Grid это один из основных инструментов позиционирования в CSS Дочерние
+      Элементы в Grid контейнере позиционируюсяв сетке, которой мы задаем
+      правила для колонок и строк(grid-сетка) ()
+    </p>
+    <!-- control+ command+ пробел  добавить эмодзи -->
+    <ul>
+      <li>grid-template-columns- шаблон- схема построения колонок в grid</li>
+      <li>gap- промежуток жмежду элементами</li>
+      <li>grid-template-rows размер добавленных строк</li>
+    </ul>
+    <div class="container-grid">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+      <div class="grid-container">10</div>
+      <div class="grid-container">11</div>
+      <div class="grid-container">12</div>
+    </div>
+    <p>С помощью grid мы можем создавать более сложные правила
+        для переноса элементов и изменения минимального и максимального 
+        размера ячеек(к примеру если при изменении экрана колонки становятся
+        сильно узкими, мы их хочем перенести)
+    </p>
+    <div class="container-grid-min-max">
+        <div class="grid-item-adaptive">1</div>
+        <div class="grid-item-adaptive">2</div>
+        <div class="grid-item-adaptive">3</div>
+        <div class="grid-item-adaptive">4</div>
+        <div class="grid-item-adaptive">5</div>
+        <div class="grid-item-adaptive">6</div>
+        <div class="grid-item-adaptive">7</div>
+        <div class="grid-item-adaptive">8</div>
+        <div class="grid-item-adaptive">9</div>
+        <div class="grid-item-adaptive">10</div>
+        <div class="grid-item-adaptive">11</div>
+        <div class="grid-item-adaptive">12</div>
+        <div class="grid-item-adaptive">13</div>
+        <div class="grid-item-adaptive">14</div>
+    </div>   
+  </body>
+</html>

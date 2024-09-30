@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  /*  */
+  /* position: fixed; */
+  /* top:0px; */
+  background-color: rgb(65, 205, 205);
+  /*  при применении position: sticky обязательно нужно указывать
+также координаты right,left, bottom,top: 0px, иначе элемент, которому была задачана это свойство
+не закрепится*/
+  position: sticky;
+  /* значение глубины при наложении элементов  */
+  z-index: 1;
+  top: 0px;
+}
+/*  добавляем еще один контейнер, чтобы при position fixed 
+видели вернюю часть шапки и оно не пряталась, делается он временно
+  */
+.div-init {
+  width: 100%;
+  height: 80px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 0 50px;
+}
+
+/* когда мы указываем абсолютное позиционирование, то с помощью
+left, top можем двигать элемент по всей странице . Но оно работает от начала
+body*/
+.square {
+  /* position: absolute; */
+  width: 250px;
+  height: 250px;
+  background-color: rgb(191, 100, 191);
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
