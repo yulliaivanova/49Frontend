@@ -1,10 +1,45 @@
 * {
   /* box-sizing: border-box; */
-  background-color: rgb(202, 151, 83);
+  /* background-color: rgb(202, 151, 83); */
+}
+body{
+  font-family: "Roboto", sans-serif;
+}
+header {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(230, 137, 14);
 }
 
-h1{
-    text-align: center;
+nav{  
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav a{
+  /* background-color:rgb(230, 137, 14) ; */
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+nav a:hover{
+  color: blue;
+}
+
+.burger__menu{
+  font-size: 30px;
+  display:none;
+
+}
+
+h1 {
+  text-align: center;
 }
 .collection {
   display: grid;
@@ -14,10 +49,10 @@ h1{
 }
 
 .collection__description {
-    /* display: flex;
+  /* display: flex;
     justify-content: center;
     align-items: center; */
-    
+
   width: 300px;
   text-align: center;
   color: black;
@@ -25,4 +60,20 @@ h1{
 .collection__poster {
   width: 100%;
   height: 200px;
+}
+
+/* медиа запросы пишем всегда вконце */
+/* на всех экранах меньше 390px работают эти CSS свойства */
+@media (max-width:480px) {
+  header{
+    background-color: antiquewhite;
+  }
+  .nav__menu > a{
+    display: none;
+  }
+  .burger__menu{
+    display:inline;
+  
+  }
+  
 }

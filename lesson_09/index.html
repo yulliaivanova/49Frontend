@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <!-- внутри head с атрибутом defer  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 2 cпособ внутри head с атрибутом defer  -->
     <script defer src="script.js"></script>
     <title>Dom intro</title>
 </head>
 <body>
-    <h1>Lesson 9. Dom intro</h1>
-    <p>DOM - Document Object Model</p>
-    <p>Все элементы на странице можно представить в виде глобального обьекта document</p>
-    <p> Xnj,s </p>
+    <h1>Lesson 9. </h1>
+    <p id="desc ">DOM - Document Object Model</p>
+    <p id="desc_info">Все элементы на странице можно представить в виде глобального обьекта document</p>
+    <p>Чтобы находить элементы в DOM нужно добавить чтото им чтото уникальное, какуюто отличительную особенность, например класс или id:
+         </p>
+         <ul class="method__list">
+            <li>По тегам- <span>getElementsByTagName</span></li>
+            <li>По классам- <span>getElementsByClassName</span></li>
+            <li>По id- <span>getElementById</span></li>
+            <li><span>document.querySelector(".method__list")</span>-универсальный метод поиска.
+            Класс уточняется серез .,id через #. При этом в ответе прийдет первый элмент удовлет поиску </li>
+         </ul>
+
+         <div>
+            <button class="btn change-heading"   id="btn_change-heading">Change heading color und size</button>
+            <button class="btn heid-list"   id="btn_heid-list">Hide list</button>
+            <button class="btn create_element"   id="btn_create_element">Create element</button>
+         </div>
+    
+    
+    
+    
+    
+    
 
 
 
 
 
 
+  
+    <p>  1 способ подключается вконце перед закрывающимся тегом </body> 
+        <!-- <script src="script.js"></script> -->
+       </p>
 
-
-    <!-- подключается вконце перед закрывающимся тегом </body> -->
-   
 </body>
 </html>

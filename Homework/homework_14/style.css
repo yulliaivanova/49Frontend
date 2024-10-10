@@ -1,0 +1,23 @@
+.header {
+  color: brown;
+  text-align: center;
+}
+
+
+.submit-button {
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: blanchedalmond;
+  display: block;
+  margin-bottom: 30px;
+  padding: 20px;
+  height: 30px;
+  width: 777px;
+  /* text-align: center; */
+}
+
+.calculator__wrap {
+  background-color: rgb(232, 174, 97);
+  width: 777px;
+}
